@@ -9,6 +9,56 @@ const foreverSmp = Object.freeze({
   pvpArena: "⚔️ PvP Arena\n\nCurrently under construction. Stay tuned for epic battles!",
 });
 
+const serverFields = document.querySelectorAll("[data-server-field]");
+const copyButtons = document.querySelectorAll("[data-copy-field]");
+
+serverFields.forEach((field) => {
+  const key = field.dataset.serverField;
+
+  if (key && foreverSmp[key]) {
+    field.textContent = foreverSmp[key];
+  }
+});
+
+const copyText = async (text) => {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.setAttribute("readonly", "");
+  textArea.style.position = "fixed";
+  textArea.style.inset = "0 auto auto 0";
+  textArea.style.opacity = "0";
+  document.body.append(textArea);
+  textArea.select();
+  document.execCommand("copy");
+  textArea.remove();
+};
+
+copyButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    const key = button.dataset.copyField;
+    const value = key ? foreverSmp[key] : "";
+    const label = button.querySelector(".copy-button-text");
+
+    if (!value || !label) {
+      return;
+    }
+
+    await copyText(value);
+    button.classList.add("is-copied");
+    label.textContent = "Copied!";
+
+    window.setTimeout(() => {
+      button.classList.remove("is-copied");
+      label.textContent = "Copy";
+    }, 1800);
+  });
+});
+
 const nav = document.querySelector(".site-nav");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = [...document.querySelectorAll(".nav-link")];

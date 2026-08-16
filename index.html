@@ -50,7 +50,12 @@
           <a class="nav-link" href="#rules">Rules</a>
           <a class="nav-link" href="#faq">FAQ</a>
           <a class="nav-link" href="#join">Join</a>
-          <a class="nav-cta" href="https://bit.ly/join-forever-smp" rel="noopener noreferrer">
+          <a
+            class="nav-cta"
+            href="https://bit.ly/join-forever-smp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Join Discord
           </a>
         </nav>
@@ -58,7 +63,61 @@
     </header>
 
     <main id="main-content" class="site-main">
-      <section id="home" class="section-anchor" aria-label="Home section placeholder"></section>
+      <section id="home" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <span class="hero-orb hero-orb-one"></span>
+          <span class="hero-orb hero-orb-two"></span>
+          <span class="hero-depth-grid"></span>
+        </div>
+
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="hero-kicker">🌍 Survival</p>
+            <h1 id="hero-title">Forever SMP</h1>
+            <p class="hero-summary">
+              Survival Minecraft for Java and Bedrock players.
+            </p>
+
+            <div class="hero-actions" aria-label="Hero actions">
+              <a
+                class="button button-primary"
+                href="https://bit.ly/join-forever-smp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Discord
+              </a>
+              <a class="button button-secondary" href="#join">Connect</a>
+            </div>
+
+            <div class="server-card" aria-label="Server connection details">
+              <div class="server-card-main">
+                <span class="server-label">Server IP</span>
+                <code class="server-address" data-server-field="javaIp"></code>
+              </div>
+              <button class="copy-button" type="button" data-copy-field="javaIp">
+                <span class="copy-button-text">Copy</span>
+              </button>
+              <p class="server-meta">
+                Bedrock: <span data-server-field="bedrockIp"></span>
+                <span aria-hidden="true">•</span>
+                Port: <span data-server-field="bedrockPort"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-logo-stage" aria-label="Official Forever SMP logo">
+            <span class="hero-logo-glow" aria-hidden="true"></span>
+            <img
+              class="hero-logo"
+              src="assets/logo/Forever%20SMP.png"
+              alt="Forever SMP logo"
+              width="640"
+              height="640"
+            />
+          </div>
+        </div>
+      </section>
       <section id="features" class="section-anchor" aria-label="Features section placeholder"></section>
       <section id="pvp-arena" class="section-anchor" aria-label="PvP Arena section placeholder"></section>
       <section id="rules" class="section-anchor" aria-label="Rules section placeholder"></section>
