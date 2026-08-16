@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Official Forever SMP website foundation for a dark, premium Minecraft-inspired static site."
+    />
+    <title>Forever SMP</title>
+    <link rel="preload" href="assets/logo/Forever%20SMP.png" as="image" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary">
+      <div class="container nav-shell">
+        <a class="brand-lockup" href="#home" aria-label="Forever SMP home">
+          <img
+            class="brand-logo"
+            src="assets/logo/Forever%20SMP.png"
+            alt="Forever SMP logo"
+            width="96"
+            height="96"
+          />
+          <span class="brand-copy">
+            <span class="brand-kicker">Official server website</span>
+            <span class="brand-name">Forever SMP</span>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle navigation menu</span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+          <a class="nav-link is-active" href="#home">Home</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#pvp-arena">PvP Arena</a>
+          <a class="nav-link" href="#rules">Rules</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#join">Join</a>
+          <a
+            class="nav-cta"
+            href="https://bit.ly/join-forever-smp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Discord
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <section id="home" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <span class="hero-orb hero-orb-one"></span>
+          <span class="hero-orb hero-orb-two"></span>
+          <span class="hero-depth-grid"></span>
+        </div>
+
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="hero-kicker">🌍 Survival</p>
+            <h1 id="hero-title">Forever SMP</h1>
+            <p class="hero-summary">
+              Survival Minecraft for Java and Bedrock players.
+            </p>
+
+            <div class="hero-actions" aria-label="Hero actions">
+              <a
+                class="button button-primary"
+                href="https://bit.ly/join-forever-smp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Discord
+              </a>
+              <a class="button button-secondary" href="#join">Connect</a>
+            </div>
+
+            <div class="server-card" aria-label="Server connection details">
+              <div class="server-card-main">
+                <span class="server-label">Server IP</span>
+                <code class="server-address" data-server-field="javaIp"></code>
+              </div>
+              <button class="copy-button" type="button" data-copy-field="javaIp">
+                <span class="copy-button-text">Copy</span>
+              </button>
+              <p class="server-meta">
+                Bedrock: <span data-server-field="bedrockIp"></span>
+                <span aria-hidden="true">•</span>
+                Port: <span data-server-field="bedrockPort"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-logo-stage" aria-label="Official Forever SMP logo">
+            <span class="hero-logo-glow" aria-hidden="true"></span>
+            <img
+              class="hero-logo"
+              src="assets/logo/Forever%20SMP.png"
+              alt="Forever SMP logo"
+              width="640"
+              height="640"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="features" class="features-section reveal-on-scroll" aria-labelledby="features-title">
+        <div class="container features-shell">
+          <div class="section-heading">
+            <p class="section-kicker">Confirmed feature</p>
+            <h2 id="features-title">Built around Survival</h2>
+            <p>
+              Forever SMP is focused on the official Survival experience confirmed for the server.
+            </p>
+          </div>
+
+          <article class="feature-card" aria-labelledby="survival-feature-title">
+            <div class="feature-card-icon" aria-hidden="true">🌍</div>
+            <div class="feature-card-content">
+              <p class="feature-card-label">Game mode</p>
+              <h3 id="survival-feature-title">Survival</h3>
+              <p>Build, explore, and survive together in Forever SMP.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="pvp-arena" class="section-anchor" aria-label="PvP Arena section placeholder"></section>
+      <section id="rules" class="section-anchor" aria-label="Rules section placeholder"></section>
+      <section id="faq" class="section-anchor" aria-label="FAQ section placeholder"></section>
+      <section id="join" class="section-anchor" aria-label="Join section placeholder"></section>
+    </main>
+  </body>
+</html>
