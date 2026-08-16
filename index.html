@@ -16,8 +16,8 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header" aria-label="Primary">
-      <div class="container header-shell">
-        <a class="brand-lockup" href="./" aria-label="Forever SMP home">
+      <div class="container nav-shell">
+        <a class="brand-lockup" href="#home" aria-label="Forever SMP home">
           <img
             class="brand-logo"
             src="assets/logo/Forever%20SMP.png"
@@ -31,50 +31,39 @@
           </span>
         </a>
 
-        <nav class="site-nav" aria-label="Future website sections">
-          <span aria-disabled="true">Server Info</span>
-          <span aria-disabled="true">Verification</span>
-          <span aria-disabled="true">PvP Arena</span>
-          <a href="https://bit.ly/join-forever-smp" rel="noopener noreferrer">Discord</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle navigation menu</span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation">
+          <a class="nav-link is-active" href="#home">Home</a>
+          <a class="nav-link" href="#features">Features</a>
+          <a class="nav-link" href="#pvp-arena">PvP Arena</a>
+          <a class="nav-link" href="#rules">Rules</a>
+          <a class="nav-link" href="#faq">FAQ</a>
+          <a class="nav-link" href="#join">Join</a>
+          <a class="nav-cta" href="https://bit.ly/join-forever-smp" rel="noopener noreferrer">
+            Join Discord
+          </a>
         </nav>
       </div>
     </header>
 
     <main id="main-content" class="site-main">
-      <section class="foundation-hero" aria-labelledby="foundation-title">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Foundation prepared</p>
-            <h1 id="foundation-title">Forever SMP</h1>
-            <p class="hero-text">
-              A static GitHub Pages foundation is ready for the official Forever SMP website.
-              Full website sections will be built after content is approved.
-            </p>
-          </div>
-
-          <div class="logo-stage" aria-label="Official Forever SMP logo preview">
-            <span class="logo-glow" aria-hidden="true"></span>
-            <img
-              src="assets/logo/Forever%20SMP.png"
-              alt="Forever SMP logo"
-              width="320"
-              height="320"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="foundation-panel" aria-labelledby="foundation-scope-title">
-        <div class="container panel-card">
-          <p class="eyebrow">Build scope</p>
-          <h2 id="foundation-scope-title">Ready for the next section</h2>
-          <p>
-            The base HTML, CSS, and JavaScript files are in place with the official logo wired in.
-            No announcements, staff, gallery images, statistics, or unconfirmed server details have
-            been added.
-          </p>
-        </div>
-      </section>
+      <section id="home" class="section-anchor" aria-label="Home section placeholder"></section>
+      <section id="features" class="section-anchor" aria-label="Features section placeholder"></section>
+      <section id="pvp-arena" class="section-anchor" aria-label="PvP Arena section placeholder"></section>
+      <section id="rules" class="section-anchor" aria-label="Rules section placeholder"></section>
+      <section id="faq" class="section-anchor" aria-label="FAQ section placeholder"></section>
+      <section id="join" class="section-anchor" aria-label="Join section placeholder"></section>
     </main>
   </body>
 </html>
