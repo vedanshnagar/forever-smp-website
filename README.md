@@ -1,6 +1,6 @@
 # Forever SMP Website
 
-Official static website for **Forever SMP**, designed for GitHub Pages.
+Official static website for **Forever SMP**, designed for Vercel.
 
 ## Stack
 
